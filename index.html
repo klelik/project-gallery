@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Project Gallery</title>
+  </head>
+  <body>
+<h1>Project Gallery</h1>
+<div class="cards">
+    <div class="box">
+        <h2>Quotte Machine</h2>
+
+        <img id="quotte" src="/assets/quotte-machine.png" alt="">
+        <p>A Random quotte Generator. Using a quotte generator Api, every time you press the button, you get a random quote and a random color on the background. Used React to do it </p>
+        <a href="javascript:void();" class="btn">Description</a>
+    </div>
+    
+    <div class="box">
+        <h2>Aibnb Clone</h2>
+
+        <img id="clone" src="/assets/airbnb-clone.png" alt="">
+        <p>Using React, cloned the Airbnb home website. Containing a Navbar, Categories and a grid of the entries cards.Also responsive and mobile friendly</p>
+        <a href="javascript:void();" class="btn">Description</a>
+    </div>
+    
+    <div class="box">
+        <h2>Drum Machine</h2>
+
+        <img id="drum" src="/assets/drum-machine.png" alt="">
+        <p>React Project, Each pad makes a certain noise when you click on or press the related button on your keyboard. you can also switch sound group that will play different sounds. </p>
+        <a href="javascript:void();" class="btn">Description</a>
+    </div>
+
+    <div class="box">
+        <h2>Calculator</h2>
+
+        <img id="calculator" src="/assets/calculator.png" alt="">
+        <p>A project in React, fully functional Calculator also styled with Tailwind css </p>
+        <a href="javascript:void();" class="btn">Description</a>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".btn").on('click',function(){
+        $(this).parent().toggleClass("showContent");
+        });
+      
+        $("#calculator").click(function() {
+        window.location.href = 'https://github.com/klelik/calculator'
+        });
+        $("#clone").click(function() {
+        window.location.href = 'https://github.com/klelik/airbnb-clone'
+        });
+        $("#drum").click(function() {
+        window.location.href = 'https://github.com/klelik/drum-machine'
+        });
+        $("#quotte").click(function() {
+        window.location.href = 'https://github.com/klelik/quotte-machine'
+        });
+      </script>
+  </body>
+</html>
